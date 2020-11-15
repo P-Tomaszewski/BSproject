@@ -37,72 +37,45 @@
             </ul>
         </div>
     </nav>
-
 </head>
 <body>
-<h2 class='mb-3'>Driver Data</h2>
-<table id="dtBasicExample" class="table" width="100%">
-    <thead>
-    <tr>
-        <th class="th-sm">Name
-        </th>
-        <th class="th-sm">Position
-        </th>
-        <th class="th-sm">Office
-        </th>
-        <th class="th-sm">Age
-        </th>
-        <th class="th-sm">Start date
-        </th>
-        <th class="th-sm">Salary
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
-        <td>Edinburgh</td>
-        <td>61</td>
-        <td>2011/04/25</td>
-        <td>$320,800</td>
-    </tr>
-    <tr>
-        <td>Garrett Winters</td>
-        <td>Accountant</td>
-        <td>Tokyo</td>
-        <td>63</td>
-        <td>2011/07/25</td>
-        <td>$170,750</td>
-    </tr>
-    <tr>
-        <td>Ashton Cox</td>
-        <td>Junior Technical Author</td>
-        <td>San Francisco</td>
-        <td>66</td>
-        <td>2009/01/12</td>
-        <td>$86,000</td>
-    </tr>
-    </td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <th>Name
-        </th>
-        <th>Position
-        </th>
-        <th>Office
-        </th>
-        <th>Age
-        </th>
-        <th>Start date
-        </th>
-        <th>Salary
-        </th>
-    </tr>
-    </tfoot>
-</table>
+
+<div class="container features">
+    <!-- Large input -->
+    <div class="md-form">
+        <label for="race">Race</label>
+        <select name="Race" id="race" class="form-control">
+<!--            Wyścig będzie pobierany z bazy i wyświetlany do wyboru (nazwa+data)-->
+            <option> I </option>
+
+            <option> II </option>
+
+            <option> III </option>
+        </select>
+    </div>
+
+    <!-- Medium input -->
+    <div class="md-form">
+        <label for="driver">Driver</label>
+        <select name="Driver" id="driver" class="form-control">
+            <!--Kierowca będzie pobierany z bazy i wyświetlany do wyboru (nazwa+data)-->
+            <option> I </option>
+
+            <option> II </option>
+
+            <option> III </option>
+        </select>
+    </div>
+
+    <!-- Small input -->
+    <div class="md-form">
+        <label for="score">Score</label>
+        <input type="text" id="score" class="form-control">
+    </div>
+
+    <button class="btn btn-outline-secondary btn-lg"
+            onclick="">Add score</button>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -113,7 +86,7 @@
 <script src="main.js"></script>
 <footer class="page-footer">
     <div class="container">
-        <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+        <div class="footer-copyright text-center">© 2020 Copyright: P_Tomaszewski</div>
     </div>
 </footer>
 </body>

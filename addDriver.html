@@ -18,11 +18,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="addDriver.html">Add driver</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="addRace.html">Add race</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add data </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="addRace.html">Add race</a></li>
+                        <li><a class="dropdown-item"  href="addDriver.html">Add driver</a></li>
+                        <li><a class="dropdown-item"  href="score.html">Add score</a></li>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="results.html">Results</a>
@@ -41,41 +45,33 @@
     <!-- Large input -->
     <div class="md-form">
         <label for="name">Name</label>
-        <input type="text" id="name" class="form-control">
+        <input type="text" id="name" class="form-control" onblur="checkName()">
+        <div id="feedbackName"></div>
     </div>
 
     <!-- Medium input -->
     <div class="md-form">
         <label for="lastname">Last Name</label>
         <input type="text" id="lastname" class="form-control">
+        <div id="feedbackLastname"></div>
     </div>
 
     <!-- Small input -->
     <div class="md-form">
         <label for="team">Team</label>
         <input type="text" id="team" class="form-control">
+        <div id="feedbackTeam"></div>
     </div>
 
     <!-- Large input -->
     <div class="md-form">
         <label for="car">Car</label>
         <input type="text" id="car" class="form-control">
+        <div id="feedbackCar"></div>
     </div>
 
-    <button class="btn btn-outline-secondary btn-lg"
-            onclick="">Add driver</button>
-
-<!--    &lt;!&ndash; Medium input &ndash;&gt;-->
-<!--    <div class="md-form">-->
-<!--        <input type="text" id="inputMDEx" class="form-control">-->
-<!--        <label for="inputMDEx">Medium input</label>-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash; Small input &ndash;&gt;-->
-<!--    <div class="md-form">-->
-<!--        <input type="text" id="inputSMEx" class="form-control">-->
-<!--        <label for="inputSMEx">Small input</label>-->
-<!--    </div>-->
+    <button id="addDriver" class="btn btn-outline-secondary btn-lg"
+            onclick="checkName()">Add driver</button>
 </div>
 
 
@@ -85,6 +81,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
+<script src="validateAddDriver.js"></script>
 <script src="main.js"></script>
 <footer class="page-footer">
     <div class="container">
