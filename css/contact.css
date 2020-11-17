@@ -5,7 +5,7 @@ body {
 }
 /*--- navigation bar ---*/
 .navbar {
-    background:darkgrey;
+    background:#4D4D4F;
 }
 .nav-link,
 .navbar-brand {
@@ -22,10 +22,9 @@ body {
     justify-content: flex-end;
 }
 .header {
-
     background-size: cover;
     background-position: center;
-    position: center;
+    position: relative;
     left: 50%;
 }
 
@@ -70,9 +69,9 @@ body {
 }
 
 .features {
-    margin: 4em auto;
+    margin: 1em auto;
     padding: 1em;
-    position: relative;
+    position: center;
 }
 
 .feature-title {
@@ -96,8 +95,15 @@ body {
 }
 
 .features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
+    background-color: #D9A23F;
+    border: 1px solid #D9A23F;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.featuresRace .btn {
+    background-color: #D9A23F;
+    border: 1px solid #D9A23F;
     color: #fff;
     margin-top: 20px;
 }
@@ -107,14 +113,20 @@ body {
     border: 1px solid #333;
 }
 
+.featuresRace .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
 .page-footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    height: 10%;
     width: 100%;
-    background-color: #222;
+    background-color: #4D4D4F;
     color: #ccc;
-    padding: 60px 0 30px;
+    /*padding: 60px 0 30px;*/
 }
 
 .footer-copyright {
@@ -143,4 +155,16 @@ body {
 .table {
     border-collapse: collapse;
 }
+
+.md-form{
+    color: #000000;
+}
+
+.featuresRace{
+    margin: 4em auto;
+    padding: 1em;
+    position: center;
+}
+
+
 

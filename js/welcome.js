@@ -10,5 +10,5 @@ if(hourNow> 18){
     greeting = 'Welcome!';
 }
 
-document.write('<h1>' + greeting.fontcolor('#C77E00') + '<h1>');
+document.write('<h1>' + greeting.fontcolor('#D9DADA') + '<h1>');
 //#ADAB0B
