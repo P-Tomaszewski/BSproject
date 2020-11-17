@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 
-    <title>Bootstrap Tutorial Sample Page</title>
+    <title>FastRace</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="index.html">FastRace</a>
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="">
+        </a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="results.html">Results</a>
+                    <a class="nav-link" href="results.html">Top3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -37,70 +39,71 @@
             </ul>
         </div>
     </nav>
-
 </head>
 <body>
-<h2 class='mb-3'>Driver Data</h2>
+<h2 class='mb-3'>Top3 drivers</h2>
 <table id="dtBasicExample" class="table" width="100%">
     <thead>
     <tr>
+        <th class="th-sm">Place
+        </th>
         <th class="th-sm">Name
         </th>
-        <th class="th-sm">Position
+        <th class="th-sm">Lastname
         </th>
-        <th class="th-sm">Office
+        <th class="th-sm">Team
         </th>
-        <th class="th-sm">Age
+        <th class="th-sm">Car
         </th>
-        <th class="th-sm">Start date
-        </th>
-        <th class="th-sm">Salary
+        <th class="th-sm">Score
         </th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
-        <td>Edinburgh</td>
-        <td>61</td>
-        <td>2011/04/25</td>
-        <td>$320,800</td>
+        <td>1.</td>
+        <td>ADAM</td>
+        <td>JURECKI</td>
+        <td>STW</td>
+        <td>BMW E30 344i</td>
+        <td>101</td>
     </tr>
     <tr>
-        <td>Garrett Winters</td>
-        <td>Accountant</td>
-        <td>Tokyo</td>
-        <td>63</td>
-        <td>2011/07/25</td>
-        <td>$170,750</td>
+        <td>2.</td>
+        <td>ARTUR</td>
+        <td>KRZYSZTON</td>
+        <td>TurboWorks Drift Team</td>
+        <td>BMW E30 340i</td>
+        <td>97</td>
+
     </tr>
     <tr>
-        <td>Ashton Cox</td>
-        <td>Junior Technical Author</td>
-        <td>San Francisco</td>
-        <td>66</td>
-        <td>2009/01/12</td>
-        <td>$86,000</td>
+        <td>3.</td>
+        <td>ARKADIUSZ</td>
+        <td>KUBICZEK</td>
+        <td>AMZ Motorsport Team	</td>
+        <td>BMW E30 335i</td>
+        <td>97</td>
+
     </tr>
     </td>
     </tr>
     </tbody>
     <tfoot>
-    <tr>
-        <th>Name
-        </th>
-        <th>Position
-        </th>
-        <th>Office
-        </th>
-        <th>Age
-        </th>
-        <th>Start date
-        </th>
-        <th>Salary
-        </th>
-    </tr>
+<!--    <tr>-->
+<!--        <th>Name-->
+<!--        </th>-->
+<!--        <th>Position-->
+<!--        </th>-->
+<!--        <th>Office-->
+<!--        </th>-->
+<!--        <th>Age-->
+<!--        </th>-->
+<!--        <th>Start date-->
+<!--        </th>-->
+<!--        <th>Salary-->
+<!--        </th>-->
+<!--    </tr>-->
     </tfoot>
 </table>
 
