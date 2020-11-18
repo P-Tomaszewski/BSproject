@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="home.html">
             <img src="img/logo7.png" alt="">
         </a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
@@ -26,12 +26,15 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="addRace.html">Add race</a></li>
                         <li><a class="dropdown-item"  href="addDriver.html">Add driver</a></li>
-                        <li><a class="dropdown-item"  href="score.html">Add score</a></li>
+                        <li><a class="dropdown-item"  href="addScore.html">Add score</a></li>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="results.html">Top3</a>
+                    <a class="nav-link" href="result.html">Result</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top.html">Top3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -43,47 +46,28 @@
 </head>
 <body>
 <div class="container features">
-    <!--Section: Contact v.2-->
     <section class="mb-4">
-
-        <!--Section heading-->
         <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-        <!--Section description-->
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions?
             Please do not hesitate to contact us directly. Our team will come back to you within
             a matter of hours to help you.</p>
-
         <div class="row">
-
-            <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
                 <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
                     <div class="row">
-
-                        <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="name" name="name" class="form-control">
                                 <label for="name" class="">Your name</label>
                             </div>
                         </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="email" class="form-control">
                                 <label for="email" class="">Your email</label>
                             </div>
                         </div>
-                        <!--Grid column-->
-
                     </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
@@ -92,33 +76,22 @@
                             </div>
                         </div>
                     </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
                     <div class="row">
-
-                        <!--Grid column-->
                         <div class="col-md-12">
-
                             <div class="md-form">
                                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-<!--                                <label for="message"></label>-->
                             </div>
 
                         </div>
                     </div>
-                    <!--Grid row-->
-
                 </form>
 
                 <div class="btn btn-outline-secondary btn-lg">
-                    <a onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <a onclick="">Send</a>
+<!--                    <a onclick="document.getElementById('contact-form').submit();">Send</a>-->
                 </div>
                 <div class="status"></div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-md-3 text-center">
                 <ul class="list-unstyled mb-0">
                     <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -130,16 +103,13 @@
                     </li>
 
                     <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
+                        <p>fastrace@gmail.com</p>
                     </li>
                 </ul>
             </div>
-            <!--Grid column-->
-
         </div>
 
     </section>
-    <!--Section: Contact v.2-->
 </div>
 
 
@@ -149,9 +119,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
 </script>
-<!--<script src="main.js"></script>-->
 <footer class="page-footer">
-        <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+        <div class="footer-copyright text-center">© 2020 Copyright: P_Tomaszewski</div>
     </div>
 </footer>
 </body>
